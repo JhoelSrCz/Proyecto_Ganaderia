@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+:root{
+    --text-color-titulo: #000000;
+    --text-color-subtitulo: #000000;
+    --text-color-texto: #000000;
+}
+#porta{
+    background-color: rgb(151, 231, 167);
+    animation: transicion 1s;
+}
+.frase{
+    color: rgb(16, 15, 15);
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    font-size: 30px;
+    padding: 10px;
+}
+.club{
+    color: rgb(15, 15, 15);
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    font-size: 30px;
+    padding: 10px;
+}
+.galeria{
+    margin: 50px 800px;
+    top: 100px;
+    left: 50px;
+    display: flex;
+    width: 500px;
+    height: 350px;
+    justify-items: center;
+}
+.galeria img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    filter: brightness(80%);
+    transition: .7s ease;
+}
+.galeria img:hover{
+    width: 500px;
+    opacity: 1;
+    filter: brightness(130%);
+}
+.not{
+    margin: 20px;
+    padding: 20px;
+}
+ol{
+    margin: 30px;
+    font-size: 25px;
+}
+.subtitulo{
+    color: var(--text-color-subtitulo);
+    font-size: 25px;
+    text-decoration: underline;
+}
+.texto{
+    color: var(--text-color-texto);
+    font-size: 19px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+@keyframes transicion{
+    from{
+        opacity: 0;
+        transform: rotateY(-10deg);
+    }
+    to{
+        opacity: 1;
+        transform: rotateY(0);
+    }
+}
